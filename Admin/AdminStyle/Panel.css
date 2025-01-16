@@ -1,0 +1,19 @@
+.text-center
+{
+    background-color: aqua;
+}
+.t2
+{
+    background-color: #f2f2f2;
+}
+.product-img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+.description {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
