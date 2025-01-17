@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.css"> 
-    <link rel="stylesheet" href="/user/UserStyle/accueil.css">  
-</head>
-<body>
-   
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="/user/UserStyle/accueil.css">
+    <script src="/Admin/Adminscripte/Panel.js"></script>
 
-    <script src="/js/bootstrap.js"></script>
+</head>
+<script
+src="https://kit.fontawesome.com/13885aca87.js"
+crossorigin="anonymous"
+></script>
+<body>
+        <!--navBar-->
+        <nav class="navbar navbar-expand-lg">
+           
+              <h3 class="navbar-brand col-8 m-1" id="navtitle" href="#">CookSpot.</h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recipes</a>
+                  </li>
+                
+                
+                </ul>
+                <a href="#" class="btn btn-latest-contest">Latest Contest</a>
+                <input type="text" class="fas fa-solar-panel" placeholder="search " id="search">
+              </div>
+            
+        </nav>
+        <!-- -->
+    <div class="container" id="con2">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="title mt-lg-5">cook like a pro with <br> our <span class="highlight">Easy</span> and <span class="highlight">Tasty</span> <br> Recipes</h4>
+              </h4> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Iusto cumque earum cum ipsam recusandae. Ullam doloremque<br> eveniet id 
+                aut illo facere maxime! Sint aliquid ad a repellat iste rerum nobis.</p>
+                <button type="button" class="btn btn-outline-warning">more explore</button>
+             </div>
+             <div class="col-4">
+                <img src="/images/lofi.jpg" alt="Lofi Image" class="img-fluid rounded m-5">
+            </div>
+        </div>
+    
+    </div>
+
+<!-- -->
+    <div class="container">
+       <div class="row">
+        <div class="col-4" id="colItems">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/lofi.jpg" alt="Lofi Image" class="img-fluid rounded" id="Img">
+                </div>
+                <h2 style="text-align: center" id="Name">wasfat mister salta3</h2>
+                <p style="text-align: center" id="Desc">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Nesciunt, excepturi?
+                </p>
+                <button type="button" class="btn btn-outline-warning" id="morebtn">See more</button>
+
+            </div>
+        </div>
+       </div>
+    </div>
+    
 </body>
 </html>

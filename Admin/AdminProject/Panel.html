@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="/css/bootstrap.css"> 
-<link rel="stylesheet" href="/Admin/AdminStyle/Panel.css"> 
-
+    <link rel="stylesheet" href="/css/bootstrap.css"> 
+    <link rel="stylesheet" href="/Admin/AdminStyle/Panel.css"> 
 </head>
 <body>
     <div class="container mt-5">
@@ -17,6 +16,8 @@
         <nav class="navbar navbar-light bg-light mb-4">
             <div class="container">
                 <a class="navbar-brand" href="admin.html">Admin Panel</a>
+                <input type="text" placeholder="Search by ID or Name" class="form-control" id="search">
+                <button onclick="search()" class="btn btn-primary">Search</button>
                 <a class="btn btn-primary" href="accueil.html">Accueil</a>
             </div>
         </nav>
@@ -67,7 +68,7 @@
     </div>
 
     <!-- Include Bootstrap JS and Panel JS -->
-     <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <script src="/Admin/Adminscripte/Panel.js" defer></script>
 </body>
 </html>

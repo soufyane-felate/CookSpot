@@ -1,0 +1,13 @@
+@import url(/component/nav.css);
+.title
+{
+    font-weight: bold;
+}
+
+.highlight {
+    color:  rgb(207, 144, 9);
+}
+#img
+{
+    border-radius: 10px;
+}

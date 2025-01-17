@@ -24,6 +24,27 @@ document.getElementById('addForm').addEventListener('submit', function(event) {
     }
 });
 
+function search() {
+    const searchQuery = document.getElementById('search').value.trim().toLowerCase();
+
+    // Filter products based on the search query
+    const filteredProducts = products.filter(product =>
+        product.id.toString().includes(searchQuery) || 
+        product.name.toLowerCase().includes(searchQuery) ||
+        product.categorie.toLowerCase().includes(searchQuery) ||
+        product.description.toLowerCase().includes(searchQuery)
+    );
+
+    // Update the table with filtered products
+    renderTable(filteredProducts);
+
+    // Handle no results
+    if (filteredProducts.length === 0) {
+        const tbody = document.querySelector('#productTable');
+        tbody.innerHTML = '<tr><td colspan="6" class="text-center">No products found</td></tr>';
+    }
+}
+
 // Function to delete a product
 function deleteProduct(id) {
     products = products.filter(product => product.id !== id);
@@ -52,10 +73,11 @@ function updateProduct(id) {
 }
 
 // Function to render the table
-function renderTable() {
+function renderTable(filteredProducts = products) {
     const tbody = document.querySelector('#productTable');
     tbody.innerHTML = '';
-    products.forEach(product => {
+
+    filteredProducts.forEach(product => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${product.id}</td>
@@ -71,6 +93,7 @@ function renderTable() {
         tbody.appendChild(row);
     });
 }
+
 
 // Render table on page load
 renderTable();

@@ -17,3 +17,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+#search
+{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+#search:focus
+{
+    outline: none;
+    background-color: rgba(173, 171, 168, 0.226);
+    transform: scale(1.1);
+}
+option
+{
+font-weight: 200;
+}
