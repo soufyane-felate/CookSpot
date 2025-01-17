@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.css"> 
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"> 
     <link rel="stylesheet" href="/Admin/AdminStyle/Panel.css"> 
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="/Admin/Adminscripte/Panel.js"></script>
 </head>
 <body>
     <div class="container mt-5">
@@ -18,7 +20,7 @@
                 <a class="navbar-brand" href="admin.html">Admin Panel</a>
                 <input type="text" placeholder="Search by ID or Name" class="form-control" id="search">
                 <button onclick="search()" class="btn btn-primary">Search</button>
-                <a class="btn btn-primary" href="accueil.html">Accueil</a>
+                <a class="btn btn-primary" href="/user/Userroject/accueil.html">Accueil</a>
             </div>
         </nav>
 
@@ -44,7 +46,7 @@
                     <input type="url" class="form-control" id="productImage" placeholder="Image URL" required>
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" class="btn btn-success w-100">Add Product</button>
+                    <button type="submit" class="btn btn-success w-100" id="btnAdd">Add Product</button>
                 </div>
             </div>
         </form>
@@ -68,7 +70,6 @@
     </div>
 
     <!-- Include Bootstrap JS and Panel JS -->
-    <script src="/js/bootstrap.js"></script>
-    <script src="/Admin/Adminscripte/Panel.js" defer></script>
+
 </body>
 </html>
