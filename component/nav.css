@@ -1,21 +1,71 @@
-nav{
-    background-color: rgba(250, 235, 215, 0.253);
+nav {
+   background-color: rgba(250, 235, 215, 0.253);
 }
-#navtitle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+#navtitle {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a
- {
-    color: black;
+
+a {
+   color: black;
+}
+
+a:hover {
+   color: rgb(255, 187, 0);
+}
+
+#search {
+   border-radius: 10px;
+   border: none;
+   text-align: end;
+   background-color: rgb(207, 144, 9);
+}
+
+.navbar-toggler {
+   border: none;
+}
+
+.navbar-toggler:focus {
+   box-shadow: none;
+}
+
+.navbar-collapse {
+   justify-content: flex-end;
+}
+
+@media (max-width: 991.98px) {
+   .navbar-nav {
+       margin-top: 10px;
+   }
+
+   .navbar-nav .nav-item {
+       text-align: center;
+   }
+
+   .d-flex {
+       margin-top: 10px;
+   }
+
+   .btn-latest-contest {
+       margin-top: 10px;
+   }
+}
+.navbar {
+   padding: 10px 0; 
  }
- a:hover
- {
-    color: rgb(255, 187, 0);
+ 
+ .navbar-brand {
+   margin-right: auto;
  }
- #search
- {
-    border-radius: 10px;
-    border: none;
-    text-align: end;
-    background-color: rgb(207, 144, 9);
+ 
+ .navbar-nav {
+   display: flex;
+   align-items: center; 
+   gap: 20px; 
  }
+ 
+ .search-input {
+   margin-left: 20px; 
+   width: 200px; 
+ }
+ 
