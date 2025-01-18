@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         products.forEach(product => addProductToTable(product));
     }
 
-    // Function to update the card with all products
+    // Function to add  the card with all products
     function updateCardsWithAllProducts() {
         const products = JSON.parse(localStorage.getItem('products')) || [];
         const colItems = document.getElementById('colItems');
