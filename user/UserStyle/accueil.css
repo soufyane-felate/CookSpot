@@ -192,7 +192,6 @@
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
-<<<<<<< HEAD
 .title1{
   width: 100%;
   display: flex;
@@ -244,10 +243,3 @@ footer{
 hr{
   width: 500px;
 }
-=======
-
-#colItems
-{
-  overflow: hidden;
-}
->>>>>>> e0619a1e0d57deb08e4fa3b066e84ebff0746c50
