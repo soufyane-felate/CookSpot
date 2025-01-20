@@ -1,0 +1,81 @@
+@import url(../utils/variables.css);
+
+.navbar-brand {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* .navbar {
+  padding: 12px 0;
+} */
+
+/* nav {
+  background-color: var(--primary-color);
+  color: #fff;
+} */
+
+/* #navtitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav a {
+  color: #fff;
+}
+
+#search {
+  border-radius: 10px;
+  border: none;
+  text-align: end;
+  background-color: rgb(207, 144, 9);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+
+  .d-flex {
+    margin-top: 10px;
+  }
+
+  .btn-latest-contest {
+    margin-top: 10px;
+  }
+}
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-input {
+  margin-left: 20px;
+  width: 200px;
+} */
