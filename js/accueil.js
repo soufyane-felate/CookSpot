@@ -1,23 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const products = JSON.parse(localStorage.getItem('products')) || [];
-    const colItems = document.getElementById('colItems');
+document.addEventListener("DOMContentLoaded", function () {
+  const products = JSON.parse(localStorage.getItem("products")) || [];
+  const flavorsImg = document.querySelector(".flavors-img");
 
-    if (colItems) {
-        colItems.innerHTML = ''; 
-        products.forEach(product => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <div class="card-img">
-                    <img src="${product.image}" alt="${product.name}" class="img-fluid">
-                </div>
+  if (flavorsImg) {
+    flavorsImg.innerHTML = ""; // Clear existing content
+    products.forEach((product) => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.style.width = "18rem"; // Set card width
+      card.innerHTML = `
+                <img src="${product.image}" class="card-img-top" alt="${product.name}" height="320px">
                 <div class="card-body">
-                    <h2 class="card-title" id="Name">${product.name}</h2>
-                    <p class="card-text" id="Desc">${product.description}</p>
-                    <button type="button" class="btn btn-outline-warning" id="morebtn">See more</button>
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">${product.description}</p>
+                    <a href="#" class="btn btn-primary">See More</a>
                 </div>
             `;
-            colItems.appendChild(card);
-        });
-    }
+      flavorsImg.appendChild(card);
+    });
+  }
 });
